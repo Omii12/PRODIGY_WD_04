@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df3ca701d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Om-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Om Pande</span><br>From Pune.</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =================ABOUT================================== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/OM PANDE.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero rerum natus possimus
+                        pariatur sunt adipisci facilis, enim, porro similique labore iusto. Id, atque laudantium modi
+                        animi quae cupiditate sint, molestias necessitatibus delectus aliquam repudiandae quia corporis
+                        beatae, ex nesciunt totam sapiente ullam minima est ipsam. Similique natus voluptatum eaque!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('expleriance')">Experiance</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JS & Bootstrap</span><br>Web Development</li>
+                            <li><span>JAVA, DSA</span><br>Backend Development</li>
+                            <li><span>DBMS, SQL</span><br>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expleriance">
+                        <ul>
+                            <li><span>Web Development Intern</span><br>At Prodigy InfoTech</li>
+                            <li><span>Software Intern</span><br>At MRND Lab Prv. Ltd.</li>
+                            <li><span>Project Intern </span><br>At CONSTROMATIC AUTOMATION LLP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>Bachelor Of Engineering <br>From Pimpri Chinchwad College OF
+                                Engineering, Pune</li>
+                            <li><span>2019</span><br>HSC From Mauli Junior College Of Science, Akola</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======================Services========================== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-coins"></i>
+                    <h2>Currency Converter</h2>
+                    <p>
+                    <ul>
+                        <li>Currency conversion web app with HTML, CSS, JS</li>
+                        <li>Real-time exchange rates from APIs for accuracy</li>
+                        <li>Users select source and target currencies from a comprehensive list</li>
+                        <li>Integration with reliable currency exchange API ensures up-to-date and accurate conversions
+                        </li>
+                    </ul>
+                    </p>
+                    <a href="https://shorturl.at/hBEHJ" target="_blank">Link.</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon.in Website Clone</h2>
+                    <p>
+                    <ul>
+                        <li>Created Amazon website clone with HTML and CSS</li>
+                        <li>Achieved pixel-perfect accuracy in design replication</li>
+                        <li>Implemented responsive features for optimal cross-device performance</li>
+                        <li>Ensured the clone looks and functions like the real Amazon site</li>
+                    </ul>
+                    </p>
+
+                    <a href="https://shorturl.at/lovxC" target="_blank">Link.</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <h2>UID-Based Secured Voting System</h2>
+                    <p>
+                    <ul>
+                        <li>Developed online voting system using UID database for Indian elections</li>
+                        <li>Utilized Aadhaar for easy retrieval and access to voter data</li>
+                        <li>Enabled voting from outside assigned constituencies or preferred locations</li>
+                        <li>Added feature for voters to confirm the accuracy of their vote to the selected candidate or
+                            party</li>
+                    </ul>
+                    </p>
+                    <a href="#" target="_blank">Link.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================My work================================= -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/P1.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>
+                            Developed a Tic Tac Toe game using HTML, CSS, and JavaScript, showcasing proficiency in
+                            front-end web development.
+                        </p>
+                        <a href="https://github.com/Omii12/TIC-TAC-TOE-GAME" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/P3.png">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>
+                            A web app using HTML, CSS, and JS for intuitive currency conversion. Real-time exchange
+                            rates
+                            from APIs ensure accuracy.
+                        </p>
+                        <a href="https://shorturl.at/hBEHJ" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/P2.png">
+                    <div class="layer">
+                        <h3>Rock-Paper_Scissor Game</h3>
+                        <p>Developed an interactive Rock, Paper, Scissors game using HTML, CSS, and JavaScript</p>
+                        <a href="https://github.com/Omii12/Rock-Paper-Scissors-Game" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ===========================Contact============================= -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ompande2k19@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-7385752800</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/om-pande-b639ab201/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Omii12"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/Om_Pande_resume (1).pdf" download class="btn btn2">Downlode CV</a>
+                </div>
+                <!-- new 0-->
+                <div class="form-container">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <!-- <label for="name">Your Name</label> -->
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Your Email</label> -->
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="textarea">Your message</label> -->
+                            <!-- <textarea required="" cols="50" rows="10" id="textarea"
+                                name="textarea">          </textarea> -->
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+
+                        </div>
+                        <button type="submit" class="form-submit-btn">Submit</button>
+                        <span id="msg"></span>
+
+                    </form>
+                </div>
+
+
+                <!-- <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <div class="copywrite">
+            <p>Copywrite @ Om Pande.<i class="fa-solid fa-heart"></i> Pune, Maharashtra</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
